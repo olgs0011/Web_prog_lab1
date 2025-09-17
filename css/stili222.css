@@ -25,7 +25,7 @@
 
 /* Общие стили для всего приложения */
 body {
-  background: #031b34;
+  background: #040C18;
   padding: 0 2rem;
 }
 
@@ -129,6 +129,8 @@ p {
   align-items: center;
   background: #031b34;
 }
+
+
 
 .header .header__menu .menu {
   display: flex;
@@ -400,10 +402,20 @@ p {
   height: 100%;
   width: 40%;
   margin-top: 20rem;
+  margin-left: -8%;
+  
 }
+
 
 .jenshina .jenshina__right .ranniy_dostyp {
   color: #81AFDD;
+  margin-bottom: 2rem;
+  
+ 
+}
+.jenshina .jenshina__right .demo_title{
+  height: 10%;
+  line-height: 1,5;
   margin-bottom: 2rem;
 }
 
@@ -411,11 +423,14 @@ p {
   color: #81AFDD;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  line-height: 2;
+  
 }
 
 .jenshina .jenshina__right .zapros_ranniy_dostyp {
   color: #FF8A71;
   border-bottom: 1px solid transparent;
+  
 }
 
 /* CTA-блок "banner" */
@@ -493,6 +508,7 @@ p {
   object-fit: cover;
   width: 417.03px;
   height: 287.34px;
+  clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%, 0 25px);
 }
 
 .blog .container_for_block .large_block .blok_large {
@@ -535,6 +551,7 @@ p {
   object-fit: cover;
   width: 327.34px;
   height: 130.47px;
+  clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%, 0 25px);
 }
 
 .blog .small_blocks .text_and_img_2 .blok_2 {
@@ -566,7 +583,7 @@ p {
 /* Футер */
 .shag_in_future {
   display: flex;
-  width: 100%;
+  width: 150%;
   height: 950px;
   background-color: #06182c;
   margin-top: 100px;
@@ -604,13 +621,13 @@ p {
   display: flex;
   padding: 1rem 4rem;
   background-color: #031B34;
-  color: #fff;
+  color: #adaaaa;
   border: none;
-  font-size: 18px;
+  font-size: 25px;
   border-radius: 0;
-  border: 2px solid #ffffff;
-  margin-top: 10%;
-  margin-bottom: 20%;
+  border: 1px solid #ffffff;
+  margin-top: 5%;
+  margin-bottom: 40%;
 }
 
 .shag_in_future .btn_box {
@@ -668,13 +685,17 @@ p {
 }
 
 .shag_in_future .shtyki_ssilok_3 {
-  font-size: 14px
+  font-size: 14px;
+  
 }  
 
 .shag_in_future .contaktiki {
   font-size: 12px;
   margin-top: 25px;
   text-align: left;
+}
+.shag_in_future .contakt_info.contaktiki.item__link{
+   margin-top: 105px;
 }
 
 .shag_in_future .adress {
@@ -696,7 +717,7 @@ p {
   font-family: "ManropeLight", sans-serif;
   color: #ffffff;
   background-color: #040C18;
-  font-size: 10px;
+  font-size: 15px;
   width: 100vw;
   margin-left: 0;
   margin-right: 0; 
