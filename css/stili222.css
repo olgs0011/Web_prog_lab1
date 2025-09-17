@@ -251,7 +251,7 @@ p {
   column-gap: 3rem;
 }
 
-/* Что такое Chat GPT */
+/* О GPT-4 */
 .what_is_chatgpt_section {
   display: flex;
   flex-direction: column;
@@ -323,7 +323,7 @@ p {
   line-height: 1.8;
 }
 
-/* Будущее наступило */
+/* Будущее здесь */
 .future_here {
   display: flex;
   column-gap: 6rem;
@@ -432,7 +432,7 @@ p {
   
 }
 
-/* блок "banner" */
+/* Вставка регистрации с кнопкой начать */
 .banner{
   width: 73rem;
   height: 10.8rem;
@@ -483,7 +483,7 @@ p {
   border: #000;
 }
 
-/* Блог */
+/* Блог + 5 картинок */
 .blog .header_blog {
   font-size: 62px;
   width: 64%;
@@ -579,7 +579,7 @@ p {
   padding: 0 0 0 1.4rem;
 }
 
-/* Футер */
+/* Шаг в будущее*/
 .shag_in_future {
   display: flex;
   width: 150%;
