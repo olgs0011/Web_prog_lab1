@@ -27,6 +27,7 @@
 body {
   background: #040C18;
   padding: 0 2rem;
+  font-family: "Manrope", sans-serif; 
 }
 
 .page {
@@ -40,6 +41,7 @@ a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  font-family: "Manrope", sans-serif; 
 }
 
 a,
@@ -63,10 +65,12 @@ ul li {
 h1 {
   font-size: 60px;
   color: #ae67fa;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 h2 {
   font-size: 34px;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 h1,
@@ -87,6 +91,7 @@ h3 {
 p {
   font-size: 16px;
   color: #fff;
+  font-family: "Manrope", sans-serif;
 }
 
 .btn {
@@ -101,6 +106,7 @@ p {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  font-family: "Manrope", sans-serif;
 }
 
 .primary-btn {
@@ -124,22 +130,22 @@ p {
   margin: 0 auto;
   width: 100%;
   padding: 2rem 0;
-  position: fixed;
+  position: static;
   justify-content: space-between;
   align-items: center;
-  background: #031b34;
-}
-
-
+  background: transparent;;
+} /*#031b34;*/
 
 .header .header__menu .menu {
   display: flex;
   column-gap: 2rem;
+  font-family: "Manrope", sans-serif;
 }
 
 .header .header__menu .menu .menu__item a {
   color: #fff;
   border-bottom: 1px solid transparent;
+  font-family: "Manrope", sans-serif; 
 }
 
 .header .header__menu .menu .menu__item:hover a {
@@ -162,7 +168,7 @@ p {
   justify-content: space-between;
   column-gap: 1rem;
   min-height: 60vh;
-  margin: 14rem 0 8rem;
+  margin: 4rem 0 8rem;
 }
 
 .hero_section .hero_section__left {
@@ -172,13 +178,23 @@ p {
   justify-content: center;
   row-gap: 1rem;
   width: 75%;
+  font-family: "ManropeBold", sans-serif;  
 }
+
+/*.hero_section .hero_section__left .Left__header {
+  font-size: 62px;
+  width: 800px;
+  padding: 8rem 0rem 6rem 0rem;
+  font-family: "ManropeBold", sans-serif; 
+}*/
 
 .hero_section .hero_section__left .left__description {
   color: #81afdd;
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: 20px;
-  margin-bottom: 0.5rem; 
+  margin-bottom: 2rem; 
+  margin-top: 1.5rem;
+  font-family: "Manrope", sans-serif;
 }
 
 .hero_section .hero_section__left .left__cta_buttons {
@@ -196,12 +212,14 @@ p {
   border-radius: 4px 0 0 4px;
   border: 1px solid #052d56;
   background-color: #052d56;
+  font-family: "Manrope", sans-serif;
 }
 
 /* Стили для placeholder (подсказки) */
 .hero_section .hero_section__left .left__cta_buttons input[type="text"]::placeholder {
   color: #92aac1;
   font-size: 20px;
+  font-family: "Manrope", sans-serif; 
 }
 
 .hero_section .hero_section__left .left__cta_buttons .btn {
@@ -222,12 +240,14 @@ p {
   padding: 0;
   color: #fff;
   align-items: center;
+  font-family: "Manrope", sans-serif;
 }
 
 .hero_section .hero_section__left .left__social_approve span {
   padding: 0 0 0 17px;
   font-size: 12px;
   margin: 0;
+  font-family: "Manrope", sans-serif; 
 }
 
 .hero_section .hero_section__left .left__social_approve:empty {
@@ -239,7 +259,10 @@ p {
 }
 
 .hero_section .hero_section__right img {
-  width: 100%;
+  width: 120%; /* увеличиваем на 20% */
+  max-width: none; /* убираем ограничение по ширине */
+  transform: scale(1.1); 
+  margin-top: -50px;
 }
 
 /* Секция брендов */
@@ -274,6 +297,8 @@ p {
   color: #81afdd;
   line-height: 1.8;
   font-size: 16px;
+  margin-top: 15px;
+  font-family: "Manrope", sans-serif; 
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__middle {
@@ -290,6 +315,7 @@ p {
   color: #ff8a71;
   font-size: 16px;
   border-bottom: 1px solid transparent;
+  font-family: "Manrope", sans-serif;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__middle a:hover {
@@ -321,6 +347,7 @@ p {
   color: #81afdd;
   font-size: 16px;
   line-height: 1.8;
+  font-family: "Manrope", sans-serif; 
 }
 
 /* Будущее здесь */
@@ -336,13 +363,13 @@ p {
   align-items: flex-start;
   row-gap: 2rem;
   flex: 2;
+  margin-top: -1rem;
 }
-
-/* .future_here .future_here__left .left__header { } */
 
 .future_here .future_here__left .left__cta {
   color: #f49867;
   border-bottom: 1px solid transparent;
+  font-family: "Manrope", sans-serif; 
 }
 
 .future_here .future_here__left a:hover {
@@ -368,7 +395,8 @@ p {
 
 .future_here .future_here__right .right__container .container__header {
   width: 35%;
-  font-size: 18px
+  font-size: 18px;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .future_here .future_here__right .right__container .container__content {
@@ -379,6 +407,7 @@ p {
   line-height: 1.8; 
   margin: 0;
   padding: 0;
+  font-family: "Manrope", sans-serif; 
 }
 
 .jenshina {
@@ -402,20 +431,19 @@ p {
   width: 40%;
   margin-top: 20rem;
   margin-left: -8%;
-  
 }
-
 
 .jenshina .jenshina__right .ranniy_dostyp {
   color: #81AFDD;
   margin-bottom: 2rem;
-  
- 
+  font-family: "Manrope", sans-serif; 
 }
+
 .jenshina .jenshina__right .demo_title{
   height: 10%;
   line-height: 1,5;
   margin-bottom: 2rem;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .jenshina .jenshina__right .bed_text {
@@ -423,13 +451,13 @@ p {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   line-height: 2;
-  
+  font-family: "Manrope", sans-serif; 
 }
 
 .jenshina .jenshina__right .zapros_ranniy_dostyp {
   color: #FF8A71;
   border-bottom: 1px solid transparent;
-  
+  font-family: "Manrope", sans-serif; 
 }
 
 /* Вставка регистрации с кнопкой начать */
@@ -458,11 +486,12 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 12px;
+  font-family: "Manrope", sans-serif; 
 }
 
 .banner .banner_left .banner_osnovn_text{
   color: #000;
-  font-family: Manrope;
+  font-family: "ManropeBold", sans-serif; 
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
@@ -480,7 +509,9 @@ p {
   width: 190px;
   height: 60px;
   border-radius:  40px;
+  font-size: 18px;
   border: #000;
+  font-family: "Manrope", sans-serif; 
 }
 
 /* Блог + 5 картинок */
@@ -488,6 +519,7 @@ p {
   font-size: 62px;
   width: 64%;
   padding: 8rem 0rem 6rem 0rem;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .blog .container_for_block {
@@ -520,7 +552,9 @@ p {
 .blog .container_for_block .large_block .blok_large .data_1 {
   font-size: 11.65px;
   margin-bottom: 0.5rem;
+  color: #adaaaa;
   padding: 2.5rem 0 0 1.4rem;
+  font-family: "Manrope", sans-serif; 
 }
 
 .blog .container_for_block .large_block .blok_large .text_1 {
@@ -528,11 +562,14 @@ p {
   font-weight: bold;
   margin-bottom: 1rem;
   padding: 0 7rem 11rem 1.4rem;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .blog .container_for_block .large_block .blok_large .ssylka_eto_futare {
   font-size: 12px;
   padding: 0 0 10rem 1.4rem;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
 }
 
 .blog .small_blocks {
@@ -564,19 +601,24 @@ p {
 .blog .small_blocks .text_and_img_2 .blok_2 .data_2 {
   padding: 1rem 0 0 1.4rem;
   font-size: 12px;
+  color: #adaaaa;
   margin-bottom: 0.5rem;
+  font-family: "Manrope", sans-serif; 
 }
 
 .blog .small_blocks .text_and_img_2 .blok_2 .text_2 {
   font-size: 19px;
   font-weight: bold;
   padding: 0rem 2rem 2.1rem 1.4rem;
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .blog .small_blocks .text_and_img_2 .blok_2 .ssylka_eto_futare_2 {
   font-size: 12px;
   text-decoration: none;
+  color: #adaaaa;
   padding: 0 0 0 1.4rem;
+  font-family: "Manrope", sans-serif; 
 }
 
 /* Шаг в будущее*/
@@ -584,7 +626,7 @@ p {
   display: flex;
   width: 150%;
   height: 950px;
-  background-color: #06182c;
+  background-color: #031b34;
   margin-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
@@ -614,19 +656,26 @@ p {
   word-wrap: break-word; 
   word-break: break-word;
   white-space: normal; 
+  font-family: "ManropeBold", sans-serif; 
 }
 
 .shag_in_future .btn_last {
   display: flex;
-  padding: 1rem 4rem;
+  width: 21.09875rem;
+  height: 4.0625rem;
+  padding: 1rem 2rem;
   background-color: #031B34;
   color: #adaaaa;
   border: none;
-  font-size: 25px;
+  font-size: 18px;
   border-radius: 0;
-  border: 1px solid #ffffff;
+  border: 1px solid #adaaaa;
   margin-top: 5%;
   margin-bottom: 40%;
+  font-family: "Manrope", sans-serif; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
 
 .shag_in_future .btn_box {
@@ -666,11 +715,19 @@ p {
 
 .shag_in_future .gpt_icon {
   margin-bottom: 10px;
-  width: auto;
-  height: auto;
+  width: 7.375rem;
+  height: 1.875rem;
   word-wrap: break-word; 
   word-break: break-word;
   white-space: normal; 
+}
+
+.shag_in_future .text_2 {
+  text-align: left;
+  font-family: "Manrope", sans-serif; 
+  color: #ffffff;
+  margin: 0; 
+  line-height: 1.5; 
 }
 
 .shag_in_future .shtyki_ssilok_3, .shag_in_future .contaktiki, .shag_in_future .adress {
@@ -681,36 +738,50 @@ p {
 
 .shag_in_future .shtyki_ssilok_3 {
   font-size: 14px;
-  
+  font-family: "ManropeBold", sans-serif; 
 }  
 
 .shag_in_future .contaktiki {
   font-size: 12px;
   margin-top: 25px;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif;
   text-align: left;
 }
-.shag_in_future .contakt_info.contaktiki.item__link{
-   margin-top: 105px;
+
+.shag_in_future .contakt_info .contaktiki .item__link{
+  margin-top: 105px;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
+}
+
+.shag_in_future .contakt_info .contaktiki .item__link{
+  margin-top: 105px;
+  margin-top: 40px;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
 }
 
 .shag_in_future .adress {
   font-size: 12px;
+  color: #adaaaa;
   margin-top: 25px;
+  font-family: "Manrope", sans-serif;
 }
 
 .rights_reserved {
   display: flex;
   width: 100%;
   height: 10px;
-  background-color: #06182c;
+  background-color: #031b34;
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-}
+} /*06182c*/
 
 .rights_reserved .rights_reserved_text {
   font-family: "ManropeLight", sans-serif;
-  color: #ffffff;
+  color: #adaaaa;
   background-color: #040C18;
   font-size: 15px;
   width: 100vw;
