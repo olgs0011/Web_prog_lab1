@@ -376,12 +376,11 @@ p {
   height: 5.625rem;   /* 90px */
   color: #81afdd;
   font-size: 14px;
-  line-height: 1.8; /* Межстрочный интервал */
+  line-height: 1.8; 
   margin: 0;
   padding: 0;
 }
 
-/* Девушка — не трогаем */
 .jenshina {
   display: flex;
   column-gap: 6rem;
@@ -433,7 +432,7 @@ p {
   
 }
 
-/* CTA-блок "banner" */
+/* блок "banner" */
 .banner{
   width: 73rem;
   height: 10.8rem;
@@ -673,10 +672,6 @@ p {
   word-break: break-word;
   white-space: normal; 
 }
-
-/*.shag_in_future .contaktiki {
-  text-align: left;
-} */ /*??????????????????&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 
 .shag_in_future .shtyki_ssilok_3, .shag_in_future .contaktiki, .shag_in_future .adress {
   font-family: "Manrope", sans-serif;
