@@ -1,0 +1,807 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "ManropeBold";
+  src: url(../fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+  font-family: "ManropeLight";
+  src: url(../fonts/Manrope-Light.ttf);
+}
+
+/* Сброс базовых стилей */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  outline: none;
+}
+
+/* Общие стили для всего приложения */
+body {
+  background: #040C18;
+  padding: 0 2rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif; 
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #ae67fa;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ae67fa;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+h1,
+h2 {
+  font-family: "ManropeBold", sans-serif;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-family: "ManropeBold", sans-serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+
+.btn {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.primary-btn {
+  background-color: #ff4820;
+}
+
+.section {
+  max-width: 73.0625rem;
+  width: 100%;
+}
+
+.lined_header {
+  background: url("../assets/img/gradient_line.svg") no-repeat 0 0 transparent;
+  padding: 1rem 0;
+}
+
+/* Стили для Шапки */
+.header {
+  display: flex;
+  max-width: 73.0625rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 0;
+  position: static;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;;
+} /*#031b34;*/
+
+.header .header__menu .menu {
+  display: flex;
+  column-gap: 2rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.header .header__menu .menu .menu__item a {
+  color: #fff;
+  border-bottom: 0.0625rem solid transparent;
+  font-family: "Manrope", sans-serif; 
+}
+
+.header .header__menu .menu .menu__item:hover a {
+  border-bottom-color: #fff;
+}
+
+.header .header__menu .menu .menu__item.active a {
+  color: #f49867;
+  border-bottom-color: #f49867;
+}
+
+.header .cta_buttons {
+  display: flex;
+  column-gap: 1rem;
+}
+
+/* Стили для первого экрана (Хиро секция) */
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Выравнивание по центру */
+  column-gap: 2rem; /* Увеличьте расстояние между колонками */
+  min-height: 60vh;
+  margin: 4rem 0 8rem;
+}
+
+.hero_section .hero_section__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 60%;
+  font-family: "ManropeBold", sans-serif;
+  z-index: 2;  
+}
+
+.hero_section .hero_section__left .left__header {
+  font-size: 62px;
+  width: 50rem;
+  padding: 2rem 0rem 1.5rem 0rem; /* Уменьшите отступы */
+  font-family: "ManropeBold", sans-serif; 
+  hyphens: manual;
+  line-height: 1.1;
+}
+
+.hero_section .hero_section__left .left__description {
+  color: #81afdd;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 2rem; 
+  margin-top: 1.5rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero_section .hero_section__left .left__cta_buttons {
+  display: flex;
+  margin-bottom: 0.5rem; 
+  width: 100%;
+}
+
+.hero_section .hero_section__left .left__cta_buttons input[type="text"] {
+  min-width: 28.5rem;
+  width: 70%;
+  height: 4.5625rem;
+  padding: 0.5rem 2rem;
+  font-size: 20px;
+  border-radius: 0.25rem 0 0 0.25rem;
+  border: 0.0625rem solid #052d56;
+  background-color: #052d56;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Стили для placeholder (подсказки) */
+.hero_section .hero_section__left .left__cta_buttons input[type="text"]::placeholder {
+  color: #92aac1;
+  font-size: 20px;
+  font-family: "Manrope", sans-serif; 
+}
+
+.hero_section .hero_section__left .left__cta_buttons .btn {
+  border-radius: 0 0.25rem 0.25rem 0;
+  min-width: 10.875rem;
+  height: 4.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.hero_section .hero_section__left .left__social_approve {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0;
+  color: #fff;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero_section .hero_section__left .left__social_approve span {
+  padding: 0 0 0 1.0625rem;
+  font-size: 12px;
+  margin: 0;
+  font-family: "Manrope", sans-serif; 
+}
+
+.hero_section .hero_section__left .left__social_approve:empty {
+  display: none;
+}
+
+.hero_section .hero_section__right {
+  width: 50%; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  overflow: visible; /* Разрешить выход за границы */
+  z-index: 1
+}
+
+.hero_section .hero_section__right img {
+  width: 41.6875rem; 
+  height: 45.625rem; 
+  object-fit: contain;
+  margin-top: -0.625rem;
+  margin-left: -6.25rem; 
+}
+
+/* Секция брендов */
+.brands_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 4rem 0;
+  column-gap: 3rem;
+}
+
+/* О GPT-4 */
+.what_is_chatgpt_section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 6rem 0;
+  row-gap: 7rem;
+  background: url(../assets/img/what_is_gpt_3_bg.svg) no-repeat 0 0 / cover;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__top {
+  display: flex;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__top .top__header {
+  flex: 30%;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__top .top__content {
+  flex: 65%;
+  color: #81afdd;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-top: 0.9375rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
+  width: 31.25rem;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__middle a {
+  color: #ff8a71;
+  font-size: 16px;
+  border-bottom: 0.0625rem solid transparent;
+  font-family: "Manrope", sans-serif;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__middle a:hover {
+  border-bottom: 0.0625rem solid #ff8a71;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 2rem;
+}
+
+.what_is_chatgpt_section .what_is_chatgpt_section__bottom .bottom__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.what_is_chatgpt_section
+  .what_is_chatgpt_section__bottom
+  .bottom__container
+  .container__content {
+  color: #81afdd;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: "Manrope", sans-serif; 
+}
+
+/* Будущее здесь */
+.future_here {
+  display: flex;
+  column-gap: 6rem;
+  margin: 6rem 0 2rem;
+}
+
+.future_here .future_here__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+  flex: 2;
+  margin-top: -1rem;
+}
+
+.future_here .future_here__left .left__cta {
+  color: #f49867;
+  border-bottom: 0.0625rem solid transparent;
+  font-family: "Manrope", sans-serif; 
+}
+
+.future_here .future_here__left a:hover {
+  border-bottom: 0.0625rem solid #f49867;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.future_here .future_here__right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.future_here .future_here__right .right__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.future_here .future_here__right .right__container .container__header {
+  width: 35%;
+  font-size: 18px;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.future_here .future_here__right .right__container .container__content {
+  width: 20.875rem;   /* 334px */
+  height: 5.625rem;   /* 90px */
+  color: #81afdd;
+  font-size: 14px;
+  line-height: 1.8; 
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif; 
+}
+
+.jenshina {
+  display: flex;
+  column-gap: 6rem;
+  margin: 6rem 0 2rem;
+  padding-bottom: 10rem;
+}
+
+.jenshina .jenshina__left {
+  height: 100%;
+  width: 60%;
+}
+
+.jenshina .jenshina__left img {
+  width: 100%;
+}
+
+.jenshina .jenshina__right {
+  height: 100%;
+  width: 40%;
+  margin-top: 20rem;
+  margin-left: -8%;
+}
+
+.jenshina .jenshina__right .ranniy_dostyp {
+  color: #81AFDD;
+  margin-bottom: 2rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+.jenshina .jenshina__right .demo_title{
+  height: 10%;
+  line-height: 1,5;
+  margin-bottom: 2rem;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.jenshina .jenshina__right .bed_text {
+  color: #81AFDD;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 2;
+  font-family: "Manrope", sans-serif; 
+}
+
+.jenshina .jenshina__right .zapros_ranniy_dostyp {
+  color: #FF8A71;
+  border-bottom: 0.0625rem solid transparent;
+  font-family: "Manrope", sans-serif; 
+}
+
+/* Вставка регистрации с кнопкой начать */
+.banner{
+  width: 73rem;
+  height: 10.8rem;
+  border-radius: 0.7rem;
+  border: 0.0625rem solid #000;
+  background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+  box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+.banner .banner_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner .banner_content .banner_left{
+  margin-top: 2rem;
+  margin-left: 2.8rem;
+}
+
+.banner .banner_left .banner_title{
+  background: #0E0E0E;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-family: "Manrope", sans-serif; 
+}
+
+.banner .banner_left .banner_osnovn_text{
+  color: #000;
+  font-family: "ManropeBold", sans-serif; 
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+.banner .banner_content .btn_cont{
+  margin-top: 3.5rem;
+  margin-right: 1.7rem;
+}
+
+.banner .banner_content .button_banner{
+  background-color: #000;
+  color: #fff;
+  width: 11.875rem;
+  height: 3.75rem;
+  border-radius:  2.5rem;
+  font-size: 18px;
+  border: #000;
+  font-family: "Manrope", sans-serif; 
+}
+
+/* Блог + 5 картинок */
+.blog .header_blog {
+  font-size: 62px;
+  width: 64%;
+  padding: 8rem 0rem 6rem 0rem;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.blog .container_for_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  padding-bottom: 7rem;
+}
+
+.blog .container_for_block .large_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .container_for_block .large_block .large_img {
+  object-fit: cover;
+  width: 26.0644rem;
+  height: 17.9588rem;
+  clip-path: polygon(1.5625rem 0, 100% 0, 100% 100%, 0 100%, 0 1.5625rem);
+}
+
+.blog .container_for_block .large_block .blok_large {
+  background-color: #042C54;
+  color: white;
+  width: 26.0644rem;
+  height: 25.4194rem;
+}
+
+.blog .container_for_block .large_block .blok_large .data_1 {
+  font-size: 11.65px;
+  margin-bottom: 0.5rem;
+  color: #adaaaa;
+  padding: 2.5rem 0 0 1.4rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+.blog .container_for_block .large_block .blok_large .text_1 {
+  font-size: 25.11px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 0 7rem 11rem 1.4rem;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.blog .container_for_block .large_block .blok_large .ssylka_eto_futare {
+  font-size: 12px;
+  padding: 0 0 10rem 1.4rem;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
+}
+
+.blog .small_blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 20.4588rem);
+  grid-gap: 3rem;
+}
+
+.blog .small_blocks .text_and_img_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .small_blocks .text_and_img_2 .photo {
+  object-fit: cover;
+  width: 20.4588rem;
+  height: 8.1544rem;
+  clip-path: polygon(1.5625rem 0, 100% 0, 100% 100%, 0 100%, 0 1.5625rem);
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 {
+  background-color: #042C54;
+  padding: 0;
+  color: white;
+  width: 20.4588rem;
+  height: 12.0856rem;
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .data_2 {
+  padding: 1rem 0 0 1.4rem;
+  font-size: 12px;
+  color: #adaaaa;
+  margin-bottom: 0.5rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .text_2 {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0rem 2rem 2.1rem 1.4rem;
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.blog .small_blocks .text_and_img_2 .blok_2 .ssylka_eto_futare_2 {
+  font-size: 12px;
+  text-decoration: none;
+  color: #adaaaa;
+  padding: 0 0 0 1.4rem;
+  font-family: "Manrope", sans-serif; 
+}
+
+/* Шаг в будущее*/
+.shag_in_future {
+  display: flex;
+  width: 150%;
+  height: 59.375rem;
+  background-color: #031b34;
+  margin-top: 6.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.shag_in_future .shag_in_future_header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shag_in_future .header_text_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  max-width: 51.3125rem;
+  height: 9.375rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1,5%;
+  margin-bottom: 5%;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
+  font-family: "ManropeBold", sans-serif; 
+}
+
+.shag_in_future .btn_last {
+  display: flex;
+  width: 21.09875rem;
+  height: 4.0625rem;
+  padding: 1rem 2rem;
+  background-color: #031B34;
+  color: #adaaaa;
+  border: none;
+  font-size: 18px;
+  border-radius: 0;
+  border: 0.0625rem solid #adaaaa;
+  margin-top: 5%;
+  margin-bottom: 40%;
+  font-family: "Manrope", sans-serif; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.shag_in_future .btn_box {
+  margin-top: -5%;
+}
+
+.shag_in_future .gpt_box {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%; 
+}
+
+.shag_in_future .links {
+  margin: 0 auto;
+  padding-left: 15%;
+}
+
+.shag_in_future .company, 
+.shag_in_future .get_in_touch {
+  margin-left: auto;
+}
+
+.shag_in_future .contakt_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.9375rem;
+}
+
+.shag_in_future .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shag_in_future .gpt_icon {
+  margin-bottom: 0.625rem;
+  width: 7.375rem;
+  height: 1.875rem;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.shag_in_future .text_2 {
+  text-align: left;
+  font-family: "Manrope", sans-serif; 
+  color: #ffffff;
+  margin: 0; 
+  line-height: 1.5; 
+}
+
+.shag_in_future .shtyki_ssilok_3, .shag_in_future .contaktiki, .shag_in_future .adress {
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+
+.shag_in_future .shtyki_ssilok_3 {
+  font-size: 14px;
+  font-family: "ManropeBold", sans-serif; 
+}  
+
+.shag_in_future .contaktiki {
+  font-size: 12px;
+  margin-top: 1.5625rem;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+}
+
+.shag_in_future .contakt_info .contaktiki .item__link{
+  margin-top: 6.5625rem;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
+}
+
+.shag_in_future .contakt_info .contaktiki .item__link{
+  margin-top: 6.5625rem;
+  margin-top: 2.5rem;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif; 
+}
+
+.shag_in_future .adress {
+  font-size: 12px;
+  color: #adaaaa;
+  margin-top: 1.5625rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.rights_reserved {
+  display: flex;
+  width: 100%;
+  height: 0.625rem;
+  background-color: #031b34;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+} /*06182c*/
+
+.rights_reserved .rights_reserved_text {
+  font-family: "ManropeLight", sans-serif;
+  color: #adaaaa;
+  background-color: #040C18;
+  font-size: 15px;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0; 
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+  }
+}
