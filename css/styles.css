@@ -133,7 +133,7 @@ p {
   position: static;
   justify-content: space-between;
   align-items: center;
-  background: transparent;;
+  background: transparent;
 } /*#031b34;*/
 
 .header .header__menu .menu {
@@ -186,7 +186,7 @@ p {
 .hero_section .hero_section__left .left__header {
   font-size: 62px;
   width: 800px;
-  padding: 2rem 0rem 1.5rem 0rem; /* Уменьшите отступы */
+  padding: 2rem 0rem 1.5rem 0rem; /* Уменьшаем отступы */
   font-family: "ManropeBold", sans-serif; 
   hyphens: manual;
   line-height: 1.1;
@@ -263,7 +263,7 @@ p {
   display: flex;
   justify-content: flex-start; 
   align-items: flex-start;
-  overflow: visible; /* Разрешить выход за границы */
+  overflow: visible; /* Разрешаем выход за границы */
   z-index: 1
 }
 
@@ -780,7 +780,7 @@ section.shag_in_future { /*Добавлено уточнение к чему и�
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-} /*06182c*/
+} 
 
 .rights_reserved .rights_reserved_text {
   font-family: "ManropeLight", sans-serif;
